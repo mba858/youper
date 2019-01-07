@@ -1,0 +1,154 @@
+/* Empty. Add your own CSS if you like */
+
+.loader {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+}
+
+
+.dashboard {
+  background: gray;
+}
+
+.dashboard .notif {
+  width: 35px;
+  display: block;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  overflow: hidden;
+}
+
+.dashboard .notif img {
+  width: 100%;
+}
+
+.dashboard .notif span {
+  width: 15px;
+  height: 15px;
+  background: #FFC107;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px;
+  display: block;
+}
+
+.dashboard .avatar {
+  background-image: url(../img/avatar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 35px;
+  top: 35px;
+  border: 1px solid #8eb7e0;
+  border-radius: 50%;
+}
+
+.dashboard .avatarImg {
+  display: block;
+  position: absolute;
+  width: 55px;
+  height: 55px;
+  left: 35px;
+  top: 35px;
+  border: 1px solid #8eb7e0;
+  border-radius: 50%;
+}
+
+
+.notifications {
+  background: gray;
+}
+
+.notifications .back_btn {
+  background: transparent;
+  color: white;
+}
+
+.notifications .card {
+  border-radius: 15px;
+  overflow: visible;
+}
+
+.notifications .card .notification {
+  width: 15px;
+  height: 15px;
+  background: #FFC107;
+  border-radius: 50%;
+  position: absolute;
+  right: -5px;
+  top: -5px;
+  padding: 0px;
+  display: block;
+}
+
+
+.notifications .card .imageBox {
+  min-height: 50px;
+  position: relative;
+}
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.3s;
+}
+
+.animate-show-hide.ng-hide-remove {
+  transition: all linear 0.5s;
+}
+
+.check-element {
+  opacity: 1;
+}
+
+.notifications .card .time {
+  font-size: 11px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.notifications .card .title {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.notifications .card .detail {
+  font-size: 13px;
+  color: #a2a2a2;
+}
+
+.notifications .card .loader {
+  width: 30px;
+  height: 30px;
+}
+
+.notifications .card img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.notifications .card .got_it {
+  border-radius: 25px;
+  width: 100px;
+  margin: auto;
+  margin-top: 30px;
+  display: block;
+}

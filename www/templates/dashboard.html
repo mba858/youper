@@ -1,0 +1,9 @@
+<ion-content class="dashboard">
+  <span ng-click="changeImage()" ng-if="!avatarImage" class="avatar" src="img/avatar.png"></span>
+  <img ng-click="changeImage()" ng-if="avatarImage" class="avatarImg" ng-src="{{avatarImage}}" />
+  <div ng-click="openMessages()" class="notif">
+    <span ng-if="new_notification" class="badge"></span>
+    <img ng-if="!animateIcon" src="img/notification.png" />
+    <img ng-if="animateIcon" src="img/notification.gif" />
+  </div>
+</ion-content>

@@ -1,0 +1,22 @@
+<img class="loader" ng-if="loading" src="img/loader.gif" />
+<ion-content class="notifications">
+  <a ng-click="back()" class="button icon-left ion-chevron-left back_btn"></a>
+  <ul ng-if="!loading" class="list">
+    <div ng-repeat="notification in notificationData;" ng-click="messageDetail(notification)" class="card">
+      <div class="item item-text-wrap">
+        <span ng-if="!notification.seen" class="notification"></span>
+        <span class="time" am-time-ago="notification.createdAt.seconds*1000"></span>
+        <p class="title">{{notification.title}}</p>
+        <p class="detail">{{notification.shortMessage}}</p>
+        <div class="imageBox check-element animate-show-hide" ng-show="notification.id==expandId">
+          <img class="loader" ng-if="!notification.imageLoaded" src="img/loader.gif" />
+          <img image_load="onImgLoad(notification)" ng-src="{{notification.image}}" />
+        </div>
+        <button ng-if="notification.id==expandId" ng-click="unExpand($event)" class="button button-energized got_it">
+          Got it
+        </button>
+      </div>
+    </div>
+  </ul>
+
+</ion-content>
